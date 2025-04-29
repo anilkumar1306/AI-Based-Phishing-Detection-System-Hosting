@@ -4,7 +4,7 @@ import pickle
 import tensorflow as tf, requests
 import base64
 import os
-port = int(os.environ.get("PORT", 5000))
+port = int(os.environ.get("PORT", 10000))
 os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 
 app = Flask(__name__)
