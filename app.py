@@ -4,7 +4,6 @@ import pickle
 import tensorflow as tf, requests
 import base64
 import os
-port = int(os.environ.get("PORT", 10000))
 os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 
 app = Flask(__name__)
@@ -83,4 +82,4 @@ def predict():
 # ... keep your existing about/team routes ...
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=port,debug=True)
+    app.run(host='0.0.0.0', port=int(os.environ.get("PORT", 10000)))
