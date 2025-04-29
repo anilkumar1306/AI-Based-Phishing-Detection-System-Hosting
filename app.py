@@ -3,6 +3,8 @@ import re
 import pickle
 import tensorflow as tf, requests
 import base64
+import os
+port = int(os.environ.get("PORT", 5000))
 
 app = Flask(__name__)
 
@@ -80,4 +82,4 @@ def predict():
 # ... keep your existing about/team routes ...
 
 if __name__ == '__main__':
-    app.run(debug=True,port=5000)
+    app.run(host="0.0.0.0", port=port,debug=True)
