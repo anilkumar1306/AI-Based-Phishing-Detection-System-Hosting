@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Phishing Detection System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+</head>
+<body>
+    <nav>
+        <a href="/">AI Page</a>
+        <a href="/about">About</a>
+        <a href="/team">Team Members</a>
+    </nav>
+    
+    <div class="container">
+        <h1>About Our Project</h1>
+        <p>Our AI-Based Phishing Detection System is designed to identify phishing emails using advanced machine learning models. The system analyzes email content for suspicious patterns, links, and language that might indicate a phishing attempt, providing an additional layer of security for users.</p>
+        
+        <h2>Technologies Used</h2>
+        <ul class="tech-list">
+            <li class="tech-item">
+                <div class="tech-category">Models</div>
+                <div class="tech-names">LSTM, CNN, RNN</div>
+            </li>
+            <li class="tech-item">
+                <div class="tech-category">Packages</div>
+                <div class="tech-names">PyTorch, TensorFlow, Flask</div>
+            </li>
+            <li class="tech-item">
+                <div class="tech-category">Libraries</div>
+                <div class="tech-names">NumPy, Pandas</div>
+            </li>
+        </ul>
+        
+        <h2>How It Works</h2>
+        <p>Our system extracts features from email content including text, headers, and embedded URLs. These features are then processed through our trained AI models to predict whether the email is legitimate or a phishing attempt. The multiple models work together to provide comprehensive detection capabilities with high accuracy rates.</p>
+    </div>
+</body>
+</html>
