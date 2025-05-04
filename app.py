@@ -38,9 +38,6 @@ def home():
 def about():
     return render_template('about.html')
 
-@app.route('/team')
-def team():
-    return render_template('team.html')
 
 @app.route('/predict', methods=['POST'])
 def predict():
